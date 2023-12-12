@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Tcc_css.css">
+    <script src="tcc_Java.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="loja">Loja dos Crias</h1>
+        <button id="modoEscuroBtn" onclick="alternarModoEscuro()">🌑</button>
+     
+        <button id="mostrarCarrinhoBtn" onclick="toggleCarrinho()">🛒</button>
+    </header>
+
+
+    <section>
+        <h2>Produtos em Destaque</h2>
+        
+
+        <div class="product">
+            <img id="overlayImg" src="mochila 1.jpg" alt="Mochila Unbreak" onclick="exibirImagem('mochila 1.jpg', 'Mochila Unbreak', 55)">
+            <h3>Mochila</h3>
+            <p>R$ 55,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('Mochila Unbreak', 55)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img id="overlayImg" src="31251073_1.png" alt="Relogio ben10" onclick="exibirImagem('31251073_1.png','Relogio ben10', 12)">
+            <h3>Relogio ben10</h3>
+            <p>R$ 12,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('Relogio ben10', 12)">Comprar</button>
+        </div>
+        <div class="product">
+            <img id="overlayImg" src="mochila 2.jpg" alt="MochilaUndead" onclick="exibirImagem('mochila 2.jpg','MochilaUndead', 50)">
+            <h3>Mochila undead</h3>
+            <p>R$ 50,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('MochilaUndead', 50)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img id="overlayImg" src="51p8oS6ILwL._AC_UL320_.jpg" alt="uno" onclick="exibirImagem('51p8oS6ILwL._AC_UL320_.jpg','uno', 21,90)">
+            <h3>
+               uno original
+            </h3>
+            <p>R$ 21,90</p>
+            <button class="comprar-btn" onclick="comprarProduto('uno', 21,90)">Comprar</button>
+        </div>
+        <div class="product">
+            <img id="overlayImg" src="51BIf6IIWiL._AC_UL320_.jpg" alt="smartwhat" onclick="exibirImagem('51BIf6IIWiL._AC_UL320_.jpg','smartwhat', 330)">
+            <h3>Smartwatch</h3>
+            <p>R$ 330,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('smartwhat', 330)">Comprar</button>
+        </div>
+        <div class="product">
+            <img id="overlayImg" src="a14.jpg" alt="a14" onclick="exibirImagem('a14.jpg','celular a14', 1330)">
+            <h3>Samsung A14 </h3>
+            <p>R$ 1330,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('celular a14', 1330)">Comprar</button>
+
+        </div>
+
+    </section>
+    <section>
+        <h2>Produtos em oferta</h2><br><p id="temporizador"></p>
+
+        <div id="overlayImg" class="product">
+            <img src="51vqB2O5BiL._AC_UL320_.jpg" alt="Mochila Unbreak" onclick="exibirImagem('51vqB2O5BiL._AC_UL320_.jpg','smartwhat', 250)">
+            <h3>Smartwatch</h3>
+            <p class="p">R$ 350,00</p>
+            <p id="desconto1">R$ 250,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('smartwhat', 250)">Comprar</button>
+
+        </div>
+
+        <div id="overlayImg" class="product">
+            <img src="painnn.jpg" alt="pen drive" onclick="exibirImagem('painnn.jpg','pen drive', 45)">
+            <h3>pen drive 64gb</h3>
+            <p class="p">R$ 65,00</p>
+            <p id="desconto2">R$ 45,00</p>
+           <button class="comprar-btn" onclick="comprarProduto('pen drive', 65)">Comprar</button>
+        </div>
+        <div id="overlayImg" class="product">
+            <img src="41pdJzcUurL._AC_.jpg" alt="baralho" onclick="exibirImagem('41pdJzcUurL._AC_.jpg','baralho', 11)">
+            <h3>baralho copag</h3>
+            <p class="p">R$ 21,00</p>
+            <p id="desconto3">R$ 11,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('baralho', 21)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img id="overlayImg" src="frita.jpg" alt="frita"onclick="exibirImagem('frita.jpg','frita', 410)">
+            <h3>fritadeira air fry</h3>
+            <p class="p">R$ 610,00</p>
+            <p id="descont4">R$ 410,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('frita', 610)">Comprar</button>
+        </div>
+        <div class="product">
+            <img id="overlayImg" src="corte rapido.jpg" alt="oh_a_faca" onclick="exibirImagem('corte rapido.jpg','Faca', 76)">
+            <h3>conjunto de facas</h3>
+            <p class="p">R$106,00</p>
+            <p id="desconto5">R$ 76,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('Faca', 76)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img id="overlayImg" src="aro20.jpg" alt="aro20" onclick="
+                exibirImagem('aro20.jpg','aro20', 599,99)">
+            <h3>bicicleta aro20</h3>
+            <p class="p">R$999,99</p>
+            <p id="desconto6">R$ 599,99</p>
+            <button class="comprar-btn" onclick="comprarProduto('aro20', 599,99)">Comprar</button>
+        </div>
+
+    </section>
+    <section><br>
+        <h2>Moda feminina</h2>
+
+        <div id="overlayImg" class="product">
+            <img src="719NSvj2fZL._AC_UL320_.jpg" alt="smartwhat" onclick="exibirImagem('719NSvj2fZL._AC_UL320_.jpg','smartwhat fit rosa', 38,50)">
+            <h3>Smartwatch fit rosa </h3>
+            <p>R$ 38,50</p>
+            <button class="comprar-btn" onclick="comprarProduto('smartwhat fit rosa', 38,50)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img id="overlayImg" src="61buhb3xyEL._AC_UL320_.jpg" alt="vestido" onclick="exibirImagem('61buhb3xyEL._AC_UL320_.jpg','vestido', 30)">
+            <h3> vestido marrom </h3>
+            <p>R$ 30,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('vestido', 30)">Comprar</button>
+        </div>
+        <div class="product">
+            <img id="overlayImg" src="51boi7v-XuL._AC_UL320_.jpg" alt="vestido2" onclick="exibirImagem('51boi7v-XuL._AC_UL320_.jpg','vestido2', 50)">
+            <h3>vestido azul</h3>
+            <p>R$ 50,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('vestido2', 50)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img id="overlayImg" src="61f0GKFUIIL._AC_UL320_.jpg" alt="bolsa"  onclick="exibirImagem('61f0GKFUIIL._AC_UL320_.jpg','bolsa', 30)">
+            <h3>bolsa preta</h3>
+            <p>R$ 30,00</p>
+            <button class="comprar-btn"  onclick="comprarProduto('bolsa', 30)">Comprar</button>
+        </div>
+        <div class="product">
+            <img id="overlayImg" src="61ILIVliujL._AC_UL320_.jpg" alt="bolsa2" onclick="exibirImagem('61ILIVliujL._AC_UL320_.jpg','bolsa2', 30)">>
+            <h3>bolsa branca</h3>
+            <p>R$ 30,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('bolsa2', 30)">Comprar</button>
+        </div>
+        <div class="product">
+            <img id="overlayImg" src="518H39CF8VL._AC_SL1000_.jpg" alt="tenis" onclick="exibirImagem('518H39CF8VL._AC_SL1000_.jpg','tenis', 189)">
+            <h3>Tênis Olympikus</h3>
+            <p>R$ 189,00</p>
+            <button class="comprar-btn" onclick="comprarProduto('tenis', 189)">Comprar</button>
+        </div>
+
+    </section>
+    <div id="overlay" onclick="fecharImagem()"></div>
+    <div id="imageDisplay" style="display: none;">
+        <img id="displayedImg" alt="Imagem ampliada">
+    </div>
+
+    <div id="overlay"></div>
+    <div id="carrinhoModal" style="display: none;">
+        <h2>Carrinho de Compras</h2>
+        <ul id="listaCarrinho"></ul>
+        <button id="fecharCarrinhoBtn" onclick="fecharCarrinho()">Fechar Carrinho</button>
+        <button id="finalizarCompraBtn" onclick="finalizarCompra()">Finalizar Compra</button>
+        <button id="limparCarrinhoBtn" onclick="limparCarrinho()">Limpar Carrinho</button>
+    </div>
+
+    <footer>
+        <p class="criadores">Ewerton Conrado L. dos Santos</p>
+        <p>insta: @ewerton.rlk</p><br>
+        <p class="criadores">vitor souza de oliveira <p>
+        <p>github: zedama</p><br>
+        <p>&copy; 2023 Loja Online.</p>
+    </footer>
+
+</body>
+</html>
